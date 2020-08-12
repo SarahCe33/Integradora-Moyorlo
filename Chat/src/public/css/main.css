@@ -1,0 +1,44 @@
+
+  
+  #contentWrap {
+    display: none;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .whisper {
+    color: gray;
+    font-style: italic;
+  }
+  .imagen {
+    align-content: center;
+    margin-bottom: 0.2em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    
+    justify-content: center;
+    width:340px;
+    height:226px;
+  }
+
+
+  @font-face {
+    font-family: "Lemon Milk";
+    src: url("LEMONMILK-Bold.otf");
+  }
+
+  .parallax {
+    background-image: url('http://drive.google.com/uc?export=view&id=1yMUp88EH0R0s-cRM44uYzgWwWgiqpqx4');
+    height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

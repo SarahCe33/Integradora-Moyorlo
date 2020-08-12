@@ -1,0 +1,55 @@
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" style="font-family: 'Lemon Milk'" href="/">Mo Yorlo</a>
+    <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" >
+          <li class="nav-item active">
+            <a class="nav-link" href="/">INICIO <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">SOBRE NOSOTROS<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/emergencia">EMERGENCIAS<span class="sr-only">(current)</span></a>
+          </li>
+      </ul>
+
+      
+      <ul class="navbar-nav ml-auto">
+        {{#if user}}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Diario 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/notes">Todos los Registros</a>
+              <a class="dropdown-item" href="/notes/add">Registrar nueva emoción</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/users/logout">Cerrar seción</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="/chat">Chat<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="/videollamada">Videollamada<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="/sabiasque">Sabias que <span class="sr-only">(current)</span></a>
+          </li>
+        {{else}}
+          <li class="nav-item">
+            <a class="nav-link" href="/users/signin">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/users/signup">REGISTRO</a>
+          </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+  </nav>

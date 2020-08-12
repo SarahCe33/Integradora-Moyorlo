@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col-md-4 mx-auto" style="margin-top: 2em;">
+        <div class="card">
+            <div class="card-header bg-success">
+               <h4 style="color: white; text-align:center;">Registro de cuenta</h4> 
+                
+            </div>
+                 <img src="/img/logo.png" class ="mx-auto d-block m-4 logo">
+            <div class="card-body">
+                <form action="/users/signup" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="Nombre" placeholder="Ingresa tu nombre (s)" value="{{name}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="ApPaterno" placeholder="Ingresa tu primer apellido" value="{{ApPaterno}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="ApMaterno" placeholder="Ingresa tu segundo apellido" value="{{ApMaterno}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="Email" class="form-control" name="Email" placeholder="Ingresa tu Email" value="{{Email}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="disabledSelect">Tipo de Usuario</label>
+                        <select type="text" name="Tipo" id="disabledSelect" class="form-control" value="{{Tipo}}">
+                            <option>Cliente</option>
+                            <option>Psicologo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="disabledSelect">País</label>
+                        <select type="text" name="Pais" id="disabledSelect" class="form-control" value="{{Pais}}">
+                        <option>México</option>
+                        <option>Estados Unidos de America</option>
+                        <option>Cuba</option>
+                        <option>Costa Rica</option>
+                        <option>Paraguay</option>
+                        <option>España</option>
+                        <option>Guatemala</option>
+                        <option>Argentina</option>
+                        <option>Perú</option>
+                        <option>Chile</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="disabledSelect">Telefono</label>
+                        <input type="tel" class="form-control" name="Tel" placeholder="Ingresa tu numero de telefono" value="{{Phone}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1" >Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" name="Fecha_Nac" value="{{Fecha_Nac}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Ingresa tu contraseña">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="confirm_password" placeholder="confirma tu contraseña">
+                    </div>
+                    <button class="btn btn-primary btn-block">
+                        Registrar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
